@@ -1,0 +1,76 @@
+name: Generate MOR Entertainment EPG
+
+on:
+  schedule:
+    # Runs every day at 00:15 Asia/Manila (16:15 UTC previous day)
+    - cron: "15 16 * * *"
+  workflow_dispatch:   # allow manual trigger
+  push:
+    branches: [main]
+    paths:
+      - "scripts/generate_epg.py"
+      - ".github/workflows/generate-epg.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate EPG
+        run: |
+          python scripts/generate_epg.py
+
+      - name: Show generated file info
+        run: |
+          ls -lh epg/
+          head -n 30 epg/mor_entertainment.xml
+          echo "..."
+          wc -l epg/mor_entertainment.xml
+
+      - name: Commit & push updated EPG (optional)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add epg/mor_entertainment.xml
+          git diff --staged --quiet || git commit -m "chore: update MOR Entertainment EPG $(date -u +%Y-%m-%d)"
+          git push
+        continue-on-error: true
+
+      - name: Upload EPG as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: mor-entertainment-epg
+          path: epg/mor_entertainment.xml
+          retention-days: 30
+
+      - name: Create / update GitHub Release (latest)
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: latest
+          name: MOR Entertainment EPG (latest)
+          body: |
+            Auto-generated XMLTV EPG for **MOR Entertainment**.
+            Generated on: ${{ github.event.head_commit.timestamp || github.run_started_at }}
+            
+            ### Usage
+            Point your IPTV player / XMLTV client to:
+            ```
+            https://github.com/${{ github.repository }}/releases/download/latest/mor_entertainment.xml
+            ```
+            or use the raw file from the `epg/` folder on the main branch.
+          files: epg/mor_entertainment.xml
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        continue-on-error: true
