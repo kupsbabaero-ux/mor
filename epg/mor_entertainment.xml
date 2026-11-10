@@ -4,46 +4,6 @@
     <display-name>MOR Entertainment</display-name>
     <icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/MOR_Entertainment_logo.png/220px-MOR_Entertainment_logo.png"/>
   </channel>
-  <programme start="20261108210000 +0000" stop="20261108230000 +0000" channel="MOR.Entertainment.ph">
-    <title lang="en">Ready, Set, MORe</title>
-    <desc lang="en">Start your day with the best OPM and lifestyle vibes. Ready, Set, MORe!</desc>
-    <category lang="en">Radio</category>
-  </programme>
-  <programme start="20261108230000 +0000" stop="20261109030000 +0000" channel="MOR.Entertainment.ph">
-    <title lang="en">MORe sa Umaga</title>
-    <desc lang="en">Morning show packed with music, conversations, and positive energy.</desc>
-    <category lang="en">Radio</category>
-  </programme>
-  <programme start="20261109030000 +0000" stop="20261109050000 +0000" channel="MOR.Entertainment.ph">
-    <title lang="en">MORe sa Tanghali</title>
-    <desc lang="en">Midday entertainment and the hottest tracks to keep you company.</desc>
-    <category lang="en">Radio</category>
-  </programme>
-  <programme start="20261109050000 +0000" stop="20261109070000 +0000" channel="MOR.Entertainment.ph">
-    <title lang="en">Dear MOR</title>
-    <desc lang="en">Drama episodes and heartfelt stories. Also streams on Thursdays &amp; Fridays on YouTube, Spotify, and Apple Podcasts.</desc>
-    <category lang="en">Radio</category>
-  </programme>
-  <programme start="20261109070000 +0000" stop="20261109100000 +0000" channel="MOR.Entertainment.ph">
-    <title lang="en">MORe sa Hapon</title>
-    <desc lang="en">Afternoon drive with great music and engaging talk.</desc>
-    <category lang="en">Radio</category>
-  </programme>
-  <programme start="20261109100000 +0000" stop="20261109130000 +0000" channel="MOR.Entertainment.ph">
-    <title lang="en">MORe sa Gabi Xpress</title>
-    <desc lang="en">Express edition of the evening show – fast, fun, and full of hits.</desc>
-    <category lang="en">Radio</category>
-  </programme>
-  <programme start="20261109130000 +0000" stop="20261109160000 +0000" channel="MOR.Entertainment.ph">
-    <title lang="en">MORe sa Gabi</title>
-    <desc lang="en">Late night vibes with the best music and chill conversations.</desc>
-    <category lang="en">Radio</category>
-  </programme>
-  <programme start="20261108160000 +0000" stop="20261108210000 +0000" channel="MOR.Entertainment.ph">
-    <title lang="en">MORe sa Magdamag</title>
-    <desc lang="en">Overnight programming – continuous music and company through the night.</desc>
-    <category lang="en">Radio</category>
-  </programme>
   <programme start="20261109210000 +0000" stop="20261109230000 +0000" channel="MOR.Entertainment.ph">
     <title lang="en">Ready, Set, MORe</title>
     <desc lang="en">Start your day with the best OPM and lifestyle vibes. Ready, Set, MORe!</desc>
@@ -600,6 +560,46 @@
     <category lang="en">Radio</category>
   </programme>
   <programme start="20261122160000 +0000" stop="20261122210000 +0000" channel="MOR.Entertainment.ph">
+    <title lang="en">MORe sa Magdamag</title>
+    <desc lang="en">Overnight programming – continuous music and company through the night.</desc>
+    <category lang="en">Radio</category>
+  </programme>
+  <programme start="20261123210000 +0000" stop="20261123230000 +0000" channel="MOR.Entertainment.ph">
+    <title lang="en">Ready, Set, MORe</title>
+    <desc lang="en">Start your day with the best OPM and lifestyle vibes. Ready, Set, MORe!</desc>
+    <category lang="en">Radio</category>
+  </programme>
+  <programme start="20261123230000 +0000" stop="20261124030000 +0000" channel="MOR.Entertainment.ph">
+    <title lang="en">MORe sa Umaga</title>
+    <desc lang="en">Morning show packed with music, conversations, and positive energy.</desc>
+    <category lang="en">Radio</category>
+  </programme>
+  <programme start="20261124030000 +0000" stop="20261124050000 +0000" channel="MOR.Entertainment.ph">
+    <title lang="en">MORe sa Tanghali</title>
+    <desc lang="en">Midday entertainment and the hottest tracks to keep you company.</desc>
+    <category lang="en">Radio</category>
+  </programme>
+  <programme start="20261124050000 +0000" stop="20261124070000 +0000" channel="MOR.Entertainment.ph">
+    <title lang="en">Dear MOR</title>
+    <desc lang="en">Drama episodes and heartfelt stories. Also streams on Thursdays &amp; Fridays on YouTube, Spotify, and Apple Podcasts.</desc>
+    <category lang="en">Radio</category>
+  </programme>
+  <programme start="20261124070000 +0000" stop="20261124100000 +0000" channel="MOR.Entertainment.ph">
+    <title lang="en">MORe sa Hapon</title>
+    <desc lang="en">Afternoon drive with great music and engaging talk.</desc>
+    <category lang="en">Radio</category>
+  </programme>
+  <programme start="20261124100000 +0000" stop="20261124130000 +0000" channel="MOR.Entertainment.ph">
+    <title lang="en">MORe sa Gabi Xpress</title>
+    <desc lang="en">Express edition of the evening show – fast, fun, and full of hits.</desc>
+    <category lang="en">Radio</category>
+  </programme>
+  <programme start="20261124130000 +0000" stop="20261124160000 +0000" channel="MOR.Entertainment.ph">
+    <title lang="en">MORe sa Gabi</title>
+    <desc lang="en">Late night vibes with the best music and chill conversations.</desc>
+    <category lang="en">Radio</category>
+  </programme>
+  <programme start="20261123160000 +0000" stop="20261123210000 +0000" channel="MOR.Entertainment.ph">
     <title lang="en">MORe sa Magdamag</title>
     <desc lang="en">Overnight programming – continuous music and company through the night.</desc>
     <category lang="en">Radio</category>
